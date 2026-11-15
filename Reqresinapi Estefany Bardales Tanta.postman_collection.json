@@ -1,0 +1,75 @@
+{
+  "info": {
+    "_postman_id": "4fe0f5c3-54fb-4cd8-9f5b-93c76737b5b1",
+    "name": "Reqresinapi Estefany Bardales Tanta",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "30514560"
+  },
+  "item": [
+    {
+      "name": "GetFullIds",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}posts/:id",
+          "host": [
+            "{{base_url}}posts"
+          ],
+          "path": [
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "6"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PostNewUser",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 11,\r\n    \"name\": \"Estefany\",\r\n    \"username\": \"tefy\",\r\n    \"email\": \"tefy_26@prueba.com\",\r\n    \"address\": {\r\n        \"street\": \"Las Alamedas\",\r\n        \"suite\": \"S/N\",\r\n        \"city\": \"Chepen\",\r\n        \"zipcode\": \"90498-8475\",\r\n        \"geo\": {\r\n            \"lat\": \"-32.5332\",\r\n            \"lng\": \"43.6576\"\r\n        }\r\n    },\r\n    \"phone\": \"974837201\",\r\n    \"website\": \"pruebita.org\",\r\n    \"company\": {\r\n        \"name\": \"hola mundo prueba\",\r\n        \"catchPhrase\": \"Multi-layered client-server neural-net\",\r\n        \"bs\": \"harness real-time e-markets\"\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}users/",
+          "host": [
+            "{{base_url}}users"
+          ],
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
